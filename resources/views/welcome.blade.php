@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <h1>my name is tonmoy roy</h1>
+    <a href="user">Go to user page</a>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
