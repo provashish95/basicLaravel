@@ -14,7 +14,8 @@ Route::get("/", function (){
     return  view('welcome');
 });
 
-Route::view('user','user');
+Route::view('/user','user');
+Route::post('/userController','UserController@userController');
 
-Route::get('youtube', 'youtube@index');
+//Route::get('youtube', 'youtube@index');
 
