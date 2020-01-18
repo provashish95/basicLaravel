@@ -13,15 +13,20 @@ class UserController extends Controller
 //       ]);
 //       print_r($req->input());
 
-       //SESSION METHOD HERE..........
-       $req->session()->put('info', $req->input());
-       $info = $req->session()->get('info');
+                  //SESSION METHOD HERE..........
+//       $req->session()->put('info', $req->input());
+//       $info = $req->session()->get('info');
 //       print_r($info['name']);
 
-       if ($info['name']=='roy'){
-           return redirect('/');
-       }else{
-           return redirect('/user');
-       }
+//       if ($info['name']=='roy'){
+//           return redirect('/');
+//       }else{
+//           return redirect('/user');
+//       }
+                  //SESSION METHOD HERE..........
+                  //SESSION flash METHOD HERE..........
+       $req->session()->flash('data', 'Data will be submitted');
+       return redirect('/welcome');
+                   //SESSION flash METHOD HERE..........
    }
 }

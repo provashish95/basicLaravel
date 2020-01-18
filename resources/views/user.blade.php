@@ -2,7 +2,7 @@
 <head>
     <title>user view </title>
 </head>
-{{--Showing the error message top of the form--}}
+               {{--Showing the error message top of the form--}}
 {{--<div>--}}
 {{--    <ul>--}}
 {{--        @foreach($errors->all() as $e)--}}
@@ -10,7 +10,7 @@
 {{--            @endforeach--}}
 {{--    </ul>--}}
 {{--</div>--}}
-{{--Showing the error message top of the form--}}
+               {{--Showing the error message top of the form--}}
   <form action="userController" method="POST">
       @csrf
       <input type="text" name="name">

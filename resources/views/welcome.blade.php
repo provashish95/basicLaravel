@@ -2,6 +2,9 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <h1>my name is tonmoy roy</h1>
+    {{--    SESSION flash METHOD HERE..........--}}
+    <h1>{{Session::get('data')}}</h1>
+    {{--    SESSION flash METHOD HERE..........--}}
     <a href="user">Go to user page</a>
 
     <meta charset="utf-8">
@@ -87,6 +90,8 @@
     <div class="content">
         <div class="title m-b-md">
             Laravel Basic laravel
+
+
         </div>
 
         <div class="links">
