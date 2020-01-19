@@ -55,5 +55,9 @@ class UserController extends Controller
 //           print_r($user);
 
 //       }
+         public function index(){
+             $data = ['name'=>'suvo', 'address'=>'dhaka', 'age'=>'23'];
+         return view('user',['data'=>$data]);
+}
 
 }

@@ -89,17 +89,17 @@
 
     <div class="content">
         <div class="title m-b-md">
-            Laravel Basic laravel
+            {{__('msg.Provashish')}}
 
 
         </div>
 
         <div class="links">
-            <a href="https://laravel.com/docs">Docs</a>
-            <a href="https://laracasts.com">Laracasts</a>
-            <a href="https://laravel-news.com">News</a>
-            <a href="https://blog.laravel.com">Blog</a>
-            <a href="https://nova.laravel.com">Nova</a>
+            <a href="https://laravel.com/docs">{{__('msg.Docs')}}</a>
+            <a href="https://laracasts.com">{{__('msg.Provashish')}}</a>
+            <a href="https://laravel-news.com">{{__('msg.Tonmoy')}}</a>
+            <a href="https://blog.laravel.com">{{__('msg.Roy')}}</a>
+            <a href="https://nova.laravel.com">{{__('msg.Tonmoy')}}</a>
             <a href="https://forge.laravel.com">Forge</a>
             <a href="https://vapor.laravel.com">Vapor</a>
             <a href="https://github.com/laravel/laravel">GitHub</a>

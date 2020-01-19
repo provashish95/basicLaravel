@@ -15,9 +15,11 @@ Route::get("/", function (){
 });
 
 Route::view('/user','user');
-Route::get('/user','UserController@userController');
+Route::view('/company', 'company');
+Route::get('/user','UserController@index');
 Route::get('/db', 'DatabaseController@index');
 Route::get('/list','companies@list');
+
 
 
 
