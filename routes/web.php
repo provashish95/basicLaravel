@@ -16,6 +16,8 @@ Route::get("/", function (){
 
 Route::view('/user','user');
 Route::get('/user','UserController@userController');
+Route::get('/db', 'DatabaseController@index');
+
 
 
 

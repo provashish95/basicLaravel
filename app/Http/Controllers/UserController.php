@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\User;
 
 class UserController extends Controller
 {
@@ -31,7 +32,7 @@ class UserController extends Controller
                    //SESSION flash METHOD HERE..........
 //   }
 
-       public  function userController(){
+//       public  function userController(){
 //           $user = DB::select("select * from tbl_user where name = 'nisha roy'");
 //          $user = DB::table('tbl_user')->sum('id');
 //                  ->insert([
@@ -45,13 +46,14 @@ class UserController extends Controller
 //                 'address'=>'Rajshahi'
 //              ]);
            //Here is join query in database
-           return $user = DB::table('tbl_user')
-               ->select('company.name','tbl_user.address')
-               ->join('company','tbl_user.id','company.user_id')
-               ->where('company.name', 'waltone')
-               ->get();
+//           return $user = DB::table('tbl_user')
+//               ->select('company.name','tbl_user.address')
+//               ->join('company','tbl_user.id','company.user_id')
+//               ->where('company.name', 'waltone')
+//               ->get();
 
 //           print_r($user);
 
-       }
+//       }
+
 }
