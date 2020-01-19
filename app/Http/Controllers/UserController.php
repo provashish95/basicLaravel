@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-   public function userController(Request $req){
+//   public function userController(Request $req){
 //       $req->validate([
 //          'password'=>'required|password',
 //           'name'=>'required|max:10'
@@ -25,8 +26,26 @@ class UserController extends Controller
 //       }
                   //SESSION METHOD HERE..........
                   //SESSION flash METHOD HERE..........
-       $req->session()->flash('data', 'Data will be submitted');
-       return redirect('/welcome');
+//       $req->session()->flash('data', 'Data will be submitted');
+//       return redirect('/welcome');
                    //SESSION flash METHOD HERE..........
-   }
+//   }
+
+       public  function userController(){
+//           $user = DB::select("select * from tbl_user where name = 'nisha roy'");
+          $user = DB::table('tbl_user')->sum('id');
+//                  ->insert([
+//                     'name'=>'provashish roy',
+//                     'address'=>'dhaka',
+//                      'age'=>'24'
+//                  ]);
+
+//           ->where('name','provashish roy')
+//              ->update([
+//                 'address'=>'Rajshahi'
+//              ]);
+
+           print_r($user);
+
+       }
 }

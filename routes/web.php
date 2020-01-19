@@ -10,12 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get("/welcome", function (){
+Route::get("/", function (){
     return  view('welcome');
 });
 
 Route::view('/user','user');
-Route::post('/userController','UserController@userController');
+Route::get('/user','UserController@userController');
 
 
 
