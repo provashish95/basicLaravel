@@ -33,7 +33,7 @@ class UserController extends Controller
 
        public  function userController(){
 //           $user = DB::select("select * from tbl_user where name = 'nisha roy'");
-          $user = DB::table('tbl_user')->sum('id');
+//          $user = DB::table('tbl_user')->sum('id');
 //                  ->insert([
 //                     'name'=>'provashish roy',
 //                     'address'=>'dhaka',
@@ -44,8 +44,14 @@ class UserController extends Controller
 //              ->update([
 //                 'address'=>'Rajshahi'
 //              ]);
+           //Here is join query in database
+           return $user = DB::table('tbl_user')
+               ->select('company.name','tbl_user.address')
+               ->join('company','tbl_user.id','company.user_id')
+               ->where('company.name', 'waltone')
+               ->get();
 
-           print_r($user);
+//           print_r($user);
 
        }
 }
