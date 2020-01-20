@@ -15,11 +15,12 @@ Route::get("/", function (){
 });
 
 Route::view('/user','user');
+Route::post('/update', 'UserController@index');
+
 Route::view('/company', 'company');
-Route::get('/user','UserController@index');
 Route::get('/db', 'DatabaseController@index');
 Route::get('/list','companies@list');
-
+Route::get('pdf', 'PDFMaker@gen');
 
 
 
